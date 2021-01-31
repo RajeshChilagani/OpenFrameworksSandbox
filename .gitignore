@@ -1,0 +1,12 @@
+# Some general ignore patterns
+ 
+#Visual Studio
+*.sdf
+*.opensdf
+*.suo
+*.user
+.vs/
+/bin
+/obj
+ipch/
+ 
