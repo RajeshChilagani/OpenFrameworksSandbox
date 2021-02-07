@@ -1,6 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
+#include "GameObject/Boid.h"
 
 class ofApp : public ofBaseApp{
 
@@ -22,9 +24,16 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 private:
+	Boid m_Boid;
 	void CalForward();
 	ofVec2f BoidPosition;
 	float BoidOrientationInDeg;
 	ofVec2f ForwardVector;
+
+	std::string AlgorithmName = "Seek";
+	/** GUI*/
+	ofxPanel Gui;
+	ofxTextField AlgorithmField;
+	ofxToggle Toggle;
 		
 };

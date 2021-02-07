@@ -101,6 +101,9 @@
     <ClInclude Include="src\GameObject\Boid.h">
       <Filter>src\GameObject</Filter>
     </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />
